@@ -32,7 +32,7 @@ body::before {
   width: 100vw !important;
   height: 100vh !important;
   background-color: #1c1b42 !important;
-  background: url("{{ site.baseurl }}/img/background.jpg") !important;
+  background-image: url("/img/background.jpg") !important;
   -webkit-background-size: contain !important;
   background-size: contain !important;
   content: "" !important;
