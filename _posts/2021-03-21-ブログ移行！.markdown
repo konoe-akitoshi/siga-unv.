@@ -2,7 +2,7 @@
 layout: post
 title:  "ブログ移行！"
 date:   2021-03-21 18:05:55 +0300
-image:  11.jpg
+image:  20210321/cover.jpg
 tags:   [つぶやき]
 ---
 皆さんこんにちは！
