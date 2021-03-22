@@ -1,13 +1,17 @@
 ---
 layout: blog
 title:  "ブログ移行！"
-date:   2021-03-21 18:05:55 +0300
+date:   2021-03-21
 image:  article/20210321/cover.jpg
 tags:   [つぶやき]
 ---
 皆さんこんにちは！
 [@konoe_akitoshi][@konoe_akitoshi]
-ちょうど昨日RCJ2021のプレゼンポスターと動画を提出し、
+ちょうど19日にRCJ2021のプレゼンポスターと動画を提出し、ほっこりしているAkitoshiです(笑)。
+さて、実は某局地動物さんに触発されブログを移行してみました🎉
+これでTexが使える(markdownとは…)
+まあ、ということでよろしくお願いいたします‼
+ブックマークよろしく!
 
 
 [@konoe_akitoshi]: https://twitter.com/konoe_akitoshi
