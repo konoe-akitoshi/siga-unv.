@@ -4,7 +4,7 @@
 title: konoe-akitoshi's blog
 description: konoe-akitoshiのブログ.日常のつぶやきです.
 baseurl: "" #ダブルクォーテーションのみで大丈夫
-url: "https://konoe-akitoshi.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://konoe-akitoshi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 #-------------------------------
