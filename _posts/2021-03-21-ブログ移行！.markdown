@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "ブログ移行！"
 date:   2021-03-21 18:05:55 +0300
 image:  article/20210321/cover.jpg

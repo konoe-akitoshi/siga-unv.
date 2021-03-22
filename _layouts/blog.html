@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog
 ---
 <div class="container">
 	<div class="row">
@@ -41,8 +41,9 @@ layout: default
 
 				<div class="post-body">
 					{{ content }}
-
+					<br>
 					<div class="post-share">
+						<p style="opacity: 0.4;">Let's Share!</p><br>
 						<ul class="share-list list-reset">
 							<li class="share-item">
 								<a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
@@ -53,7 +54,7 @@ layout: default
 							</li>
 					
 							<li class="share-item">
-								<a class="share-twitter" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+								<a class="share-twitter" href="https://twitter.com/intent/tweet?text={% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}｜{{ site.title | uri_escape }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
 								onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
 								title="Share on Twitter" rel="nofollow">
 									<i class="ion ion-logo-twitter"></i>
@@ -82,12 +83,12 @@ layout: default
 				<div class="post-navigation">
 					{% if page.previous.url %}
 					<a href="{{ site.baseurl }}{{page.previous.url}}" class="prev">
-						<div class="post-nav-arrow"><i class="ion ion-ios-arrow-round-back"></i> Previous Article</div>
+						<div class="post-nav-arrow"><i class="ion ion-ios-arrow-round-back"></i> 前の記事</div>
 						<h2 class="post-nav-title">{{page.previous.title}}</h2>
 					</a>
 					{% endif %} {% if page.next.url %}
 					<a href="{{ site.baseurl }}{{page.next.url}}" class="next">
-						<div class="post-nav-arrow">Next Article <i class="ion ion-ios-arrow-round-forward"></i></div>
+						<div class="post-nav-arrow">次の記事 <i class="ion ion-ios-arrow-round-forward"></i></div>
 						<h2 class="post-nav-title">{{page.next.title}}</h2>
 					</a>
 					{% endif %}
