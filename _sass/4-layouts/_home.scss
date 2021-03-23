@@ -224,7 +224,7 @@
       line-height: 30px;
       font-weight: normal;
       a {
-        color: #444;
+        color: $text;
         transition: $global-transition;
       }
     }
@@ -233,7 +233,6 @@
       margin-bottom: 30px;
       font-size: 14px;
       line-height: 23px;
-      color: #545454;
     }
     .button {
       font-size: 14px;
