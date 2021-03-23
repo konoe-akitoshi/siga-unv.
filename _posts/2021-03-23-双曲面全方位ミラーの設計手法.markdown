@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title:  "双曲面全方位ミラーの設計手法"
 date:   2021-03-23
 image:  article/20210321/cover.jpg
