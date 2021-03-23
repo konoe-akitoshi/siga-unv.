@@ -6,7 +6,8 @@ image:  article/20210321/cover.jpg
 tags:   [RCJ][設計][視覚センサ]
 ---
 皆さんこんにちは！
-[@konoe_akitoshi][@konoe_akitoshi]
+[@konoe_akitoshi][@konoe_akitoshi]です。
+今回は私達のロボットに載っている
 
 
 
