@@ -3,7 +3,7 @@ layout: post
 title:  "ロボカップジュニア日本大会2021オンラインを終えて"
 date:   2021-03-28
 image:  article/20210328/cover.png
-tags:   [RCJ,設計,視覚センサ]
+tags:   [RCJ,大会]
 ---
 ロボカップジュニア日本大会2021オンライン終わりました。
 私達NTは、Openリーグで二位という結果に終わりました。
@@ -29,5 +29,7 @@ yutaさんはほんとにずっと僕のあこがれでした。多分やっと�
 ほんとにありがとうございました。
 
 2021/03/28
+
 [@konoe_akitoshi][@konoe_akitoshi]
+
 [@konoe_akitoshi]: https://twitter.com/konoe_akitoshi
