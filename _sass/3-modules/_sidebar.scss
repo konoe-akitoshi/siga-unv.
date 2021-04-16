@@ -114,16 +114,13 @@
 .author {
   position: relative;
   overflow: hidden;
-  //margin: 10px;
   width: 100%;
-  color: #ffffff;
   text-align: left;
   line-height: 1.4em;
-  //background-color: #141414;
 
   border-radius: $global-radius2;
   padding: 0px 0px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   background: rgba($blue-darken, .95);
   box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
 }
@@ -133,14 +130,14 @@
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-.author img {
+.author-avatar {
   max-width: 100%;
   vertical-align: top;
   opacity: 0.85;
 }
 .author figcaption {
   width: 100%;
-  background-color: #141414;
+  background-color: rgba($blue-darken, .95);;
   padding: 25px;
   position: relative;
 }
@@ -153,7 +150,7 @@
   height: 0;
   border-style: solid;
   border-width: 55px 0 0 400px;
-  border-color: transparent transparent transparent #141414;
+  border-color: transparent transparent transparent rgba($blue-darken, .95);;
 }
 .author figcaption a {
   padding: 5px;
