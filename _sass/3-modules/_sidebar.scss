@@ -130,7 +130,7 @@
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-.author-avatar {
+.author img {
   max-width: 100%;
   vertical-align: top;
   opacity: 0.85;
@@ -170,7 +170,7 @@
 .author figcaption a:hover {
   opacity: 1;
 }
-.author .profile {
+.author-avatar {
   border-radius: 50%;
   position: absolute;
   bottom: 100%;
