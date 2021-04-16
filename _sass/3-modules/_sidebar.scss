@@ -6,7 +6,7 @@
   border-radius: $global-radius2;
   padding: 40px 15px;
   margin-bottom: 30px;
-  background: rgba($blue-darken, .95);
+  background: rgba($blue-darken, 0.95);
   box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
   .widget-title {
     position: relative;
@@ -34,12 +34,12 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 15px;
-  &:hover{
+  &:hover {
     .recent-image {
       border-radius: $global-radius;
       &::before {
-        background: rgba(0, 0, 0, .15);
-        transition: all .5s ease;
+        background: rgba(0, 0, 0, 0.15);
+        transition: all 0.5s ease;
       }
     }
     .recent-content {
@@ -90,7 +90,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
     }
   }
 
@@ -121,7 +121,7 @@
   border-radius: $global-radius2;
   padding: 0px 0px;
   margin-bottom: 30px;
-  background: rgba($blue-darken, .95);
+  background: rgba($blue-darken, 0.95);
   box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
 }
 .author * {
@@ -137,13 +137,13 @@
 }
 .author figcaption {
   width: 100%;
-  background-color: rgba($blue-darken, .95);
+  background-color: rgba($blue-darken, 0.95);
   padding: 5px 25px 25px;
   position: relative;
 }
 .author figcaption:before {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 100%;
   left: 0;
   width: 0;
@@ -246,7 +246,7 @@
           display: block;
           height: 100%;
           width: 100%;
-          background: rgba($blue-darken, .3);
+          background: rgba($blue-darken, 0.3);
           transition: $global-transition;
         }
         &:hover {
@@ -258,7 +258,7 @@
     }
     .instagram-prof {
       font-size: 14px;
-      color: #3E4250;
+      color: #3e4250;
       &:hover {
         text-decoration: underline;
       }
