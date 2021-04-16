@@ -3,6 +3,7 @@
   margin-bottom: 30px;
 }
 .widget {
+  border-radius: $global-radius2;
   padding: 40px 15px;
   margin-bottom: 30px;
   background: rgba($blue-darken, .95);
@@ -35,6 +36,7 @@
   margin-bottom: 15px;
   &:hover{
     .recent-image {
+      border-radius: $global-radius;
       &::before {
         background: rgba(0, 0, 0, .15);
         transition: all .5s ease;
@@ -52,16 +54,19 @@
     margin-bottom: 0;
   }
   .recent-header {
+    border-radius: $global-radius;
     width: 100%;
     margin-bottom: 10px;
     background: $black;
     &.reveal-in {
       .recent-image {
+        border-radius: $global-radius;
         opacity: 1;
       }
     }
   }
   .recent-image {
+    border-radius: $global-radius;
     position: relative;
     display: block;
     width: 100%;
@@ -74,11 +79,13 @@
     opacity: 0;
     transition: all 1s cubic-bezier(0.6, 0.3, 0, 1);
     &:after {
+      border-radius: $global-radius;
       content: "";
       display: table;
       padding-top: 20%;
     }
     &:before {
+      border-radius: $global-radius;
       content: "";
       position: absolute;
       width: 100%;
@@ -103,7 +110,97 @@
     }
   }
 }
-
+// Author Widget
+/*.author {
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: #141414;
+}
+.author * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+*/
+.author img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+.author figcaption {
+  width: 100%;
+  background-color: #141414;
+  padding: 25px;
+  position: relative;
+}
+.author figcaption:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #141414;
+}
+.author figcaption a {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.author figcaption a:hover {
+  opacity: 1;
+}
+.author .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 25px;
+  z-index: 1;
+  max-width: 90px;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.author .follow {
+  margin-right: 4%;
+  border-color: #2980b9;
+  color: #2980b9;
+}
+.author h2 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+.author h2 span {
+  display: block;
+  font-size: 0.5em;
+  color: #2980b9;
+}
+.author p {
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
 // Social Widget
 .social-profiles {
   text-align: center;
