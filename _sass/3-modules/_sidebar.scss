@@ -111,18 +111,21 @@
   }
 }
 // Author Widget
-/*.author {
-  font-family: 'Roboto', Arial, sans-serif;
+.author {
   position: relative;
   overflow: hidden;
-  margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
+  //margin: 10px;
   width: 100%;
   color: #ffffff;
   text-align: left;
   line-height: 1.4em;
-  background-color: #141414;
+  //background-color: #141414;
+
+  border-radius: $global-radius2;
+  padding: 0px 0px;
+  margin-bottom: 0px;
+  background: rgba($blue-darken, .95);
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
 }
 .author * {
   -webkit-box-sizing: border-box;
@@ -130,7 +133,6 @@
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-*/
 .author img {
   max-width: 100%;
   vertical-align: top;
