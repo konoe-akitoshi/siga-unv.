@@ -1,54 +1,5 @@
-<!--
-  <div class="preloader">
+<div class="preloader">
   <div class="loader">
-    <div>
-      <img id="logo-loader" src="{{"/img/" | prepend: site.baseurl | append : site.author-avatar}}" alt="Loading..." />
-    </div>
-  --><!--<span>Loading</span>--><!--
+    <span>Loading</span>
   </div>
-</div> --><!-- /.loader --><!--
--->
-
-<div>
-  <div class="preloader">
-  <div class="loader">
-  <img id="logo-loader" src="{{"/img/" | prepend: site.baseurl | append : site.author-avatar}}" />
-  </div>
-  </div>>
-</div>
-
-<!-- Load Loadgo -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/LoadGo/2.1/loadgo-nojquery.min.js"></script>
-<script>
-  var image = document.getElementById("logo-loader");
-  
-  // When the image loads, create the progress
-  image.onload = function(){
-      // Init the loader
-      Loadgo.init(image);
-      // Load effect
-      triggerLoadEffect();
-  };
-
-  function triggerLoadEffect(){
-      var progress = 0;
-
-      // Every half second add 10 to the progress of the bar
-      var myInterval = setInterval(function(){ 
-          // Stop progress
-          if(progress == 100){
-              return stopInterval();
-          }
-          // Update progress
-          progress += 10;
-
-          // Change progress of the bar
-          Loadgo.setprogress(image, progress);
-      }, 500);
-
-      function stopInterval(){
-          clearInterval(myInterval);
-          console.log("The progress bar has a value of 100 %");
-      }
-  }
-</script>
+</div> <!-- /.loader -->
