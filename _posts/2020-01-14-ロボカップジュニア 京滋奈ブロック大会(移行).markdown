@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ロボカップジュニア 京滋奈ブロック大会"
+title:  "ロボカップジュニア 京滋奈ブロック大会(移行)"
 date:   2020-01-14
 image:  article/20200114/cover.jpg
 tags:   [RCJ]

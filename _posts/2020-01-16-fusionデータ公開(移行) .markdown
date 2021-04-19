@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "fusionデータ公開"
+title:  "fusionデータ公開(移行)"
 date:   2020-01-16
 image:  article/20200116/cover.jpg
 tags:   [RCJ]
