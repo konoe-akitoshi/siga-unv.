@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
 
-title: konoe-akitoshi's blog
+title: Akitoshi Lab.
 description: konoe-akitoshiのブログ.日常のつぶやきです.
 baseurl: "" #ダブルクォーテーションのみで大丈夫
 url: "https://konoe-akitoshi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -15,9 +15,9 @@ author-avatar: avatar.png
 
 #-------------------------------
 # Contact links
-facebook:  https://facebook.com/ # Add your Facebook handle
-twitter:   https://twitter.com/ # Add your Facebook handle
-instagram: https://www.instagram.com/ # Add your Facebook handle
+facebook:  https://facebook.com/profile.php?id=100010721778478 # Add your Facebook handle
+twitter:   https://twitter.com/@konoe_akitoshi # Add your Facebook handle
+instagram: https://www.instagram.com/nt_akitoshi/ # Add your Facebook handle
 
 
 
