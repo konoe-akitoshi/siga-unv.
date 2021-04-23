@@ -2,7 +2,7 @@
 layout: post
 title:  "全方位視覚センサとは？"
 date:   2021-04-23
-image:  article/20210423/cover.jpg
+image:  article/20210423/cover.JPG
 tags:   [RCJ,視覚センサ]
 ---
 [@konoe_akitoshi][@konoe_akitoshi]です．
