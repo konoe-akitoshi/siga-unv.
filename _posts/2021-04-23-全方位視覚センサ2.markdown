@@ -15,8 +15,12 @@ tags:   [RCJ,視覚センサ]
 
 ミラーの設計に必要なカメラ，ミラーのパラメータを下に示す．
 
-![カメラのパラメータ]({{site.baseurl}}/img/article/20210503/cam-pala.jpg)
-![双曲面ミラーのパラメータ]({{site.baseurl}}/img/article/20210503/soukyokusenn-pala.jpg)
+<table>
+    <tr>
+        <td><img src="{{site.baseurl}}/img/article/20210503/cam-pala.jpg" alt=""></td>
+        <td><img src="{{site.baseurl}}/img/article/20210503/soukyokusenn-pala.jpg" alt=""></td>
+    </tr>
+</table>
 
 ## 理論計算
 ミラーの直径を算出し決定する．
