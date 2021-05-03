@@ -1,0 +1,145 @@
+---
+layout: post
+title:  "全方位視覚センサ2"
+date:   2021-05-03
+image:  article/20210503/cover.JPG
+tags:   [RCJ,視覚センサ]
+---
+[@konoe_akitoshi][@konoe_akitoshi]です．
+
+今回は双曲面ミラーの具体的な計算手法です！
+ご賞味ください！
+# 双曲面ミラーの設計手法
+## 前提条件の整理
+今回は一例として[Raspberry Pi Camera Module v2][Raspberry Pi Camera Module v2]を使用した場合について計算する．
+
+ミラーの設計に必要なカメラ，ミラーのパラメータを下に示す．
+
+![カメラのパラメータ]({{site.baseurl}}/img/article/20210503/cam-pala.jpg)
+![双曲面ミラーのパラメータ]({{site.baseurl}}/img/article/20210503/soukyokusenn-pala.jpg)
+
+## 理論計算
+ミラーの直径を算出し決定する．
+
+![直径の算出]({{site.baseurl}}/img/article/20210503/tyokkei.jpg)
+
+図より$r$の値を算出する．
+
+※$tan31.1 \approx 0.6032$と近似する．
+
+$$
+\begin{eqnarray}
+r &=& tan31.1 \cdot 25 \cdot 2 \\
+&=& 30.16
+\tag{1}
+\end{eqnarray}
+$$
+
+今回は計算上 $30.16 \approx 30$ として考え，直径は $30 \cdot 2 = 60$.
+
+算出した直径と前提条件よりミラー(双曲線)の方程式を求める．
+
+![視覚センサの構造]({{site.baseurl}}/img/article/20210503/kouzou.jpg)
+
+図に示すようにZ軸を鉛直軸とする3次元座標系O-XYZを考える．
+
+この時2葉双曲面は次式で表わせる．
+
+$$\frac{x^{2}+y^{2}}{a^{2}}-\frac{z^{2}}{b^{2}}=-1 \tag{2}$$
+
+a，bは双曲線の形状を定義する定数である．2葉のうちZ>0の領域にある双曲面をミラーとして利用する．
+
+
+ミラー面　(式2) (z>0)
+
+$$c=\sqrt{a^{2}+b^{2}}\tag{3}$$
+
+
+
+
+
+$$
+\begin{eqnarray*}
+ミラーの焦点&:&(0，0，+C)\\
+カメラのレンズ中心&:&(0，0，-C)
+\end{eqnarray*}
+$$
+
+より
+
+(式2)は $\left(\sqrt{\mathrm{x}^{2}+y^{2}}, \mathrm{z}\right)=(30,25)$ を通るので
+
+$$
+\frac{a^{2}}{900+a^{2}} \cdot 625=b^{2} \tag{4}
+$$
+
+(式3)より $c=25$ から
+
+$$
+625=a^{2}+b^{2}\tag{5}
+$$
+
+(式5)に(式4)を代入して
+
+$$
+a^{4}+30^{2} \cdot a^{2}-25^{2} \cdot 30^{2}=0\tag{6}
+$$
+
+解の公式より
+
+$$
+a^{2}=424,65,-1324,65
+$$
+
+$a^2>0$ ,(式3)より
+
+$$
+\begin{eqnarray*}
+\therefore a&=&20.61\\
+b&=&14.15
+\end{eqnarray*}
+$$
+
+以上より双曲面ミラーの式が得られる
+
+一般的な双曲線の式は
+
+$$
+\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=-1
+$$
+
+で表せられる．
+
+この式に算出した$a,b$を代入し，
+
+$$
+\frac{x^{2}}{423}-\frac{y^{2}}{200}=-1
+$$
+
+となる．
+
+以上．双曲線の式の計算方法について書きました．
+次回は設計手法です．
+お楽しみに！
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@konoe_akitoshi]: https://twitter.com/konoe_akitoshi
+[Raspberry Pi Camera Module v2]:https://www.raspberrypi.org/products/camera-module-v2/
