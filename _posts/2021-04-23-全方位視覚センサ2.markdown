@@ -2,7 +2,7 @@
 layout: post
 title:  "全方位視覚センサ2"
 date:   2021-05-03
-image:  article/20210505/cover.JPG
+image:  article/20210503/cover.JPG
 tags:   [RCJ,視覚センサ]
 ---
 [@konoe_akitoshi][@konoe_akitoshi]です．
