@@ -54,5 +54,5 @@ Twitterでも少し書いていましたが，自分は高校に入ってから�
 
 
 [@konoe_akitoshi]: https://twitter.com/konoe_akitoshi
-[https://robocupjuniortc.github.io/soccer-2021/pdfs/TDPs/OPEN_NT.pdf]: https://robocupjuniortc.github.io/soccer-2021/pdfs/TDPs/OPEN_NT.pdf
+[TDP]: https://robocupjuniortc.github.io/soccer-2021/pdfs/TDPs/OPEN_NT.pdf
 
