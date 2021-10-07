@@ -48,7 +48,7 @@
 }
 
 .post-content {
-  padding: 40px 15px;
+  //padding: 40px 15px;
   //box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
   //border-radius: $global-radius2;
 }
@@ -80,6 +80,7 @@
       color: $primary-color;
       transition: $global-transition;
       &:last-child {
+        margin-top: 20px;
         margin-right: 0;
       }
       &:hover {
@@ -221,7 +222,7 @@
 // MEDIA
 @media only screen and (min-width: 576px) {
   .post-content {
-    padding: 40px;
+    //padding: 40px;
   }
   .post-head {
     .post-title {
