@@ -5,6 +5,7 @@ date:   2021-06-13
 image:  article/20210613/cover.png
 tags:   [置き場]
 ---
+<div class="bcard-wrapper"><span class="bcard-header withgfav"><div class="bcard-favicon" style="background-image: url(https://www.google.com/s2/favicons?domain=https://ja.overleaf.com/project)"></div><div class="bcard-site"><a href="https://ja.overleaf.com/project" rel="nofollow" target="_blank"></a></div><div class="bcard-url"><a href="https://ja.overleaf.com/project" rel="nofollow" target="_blank">https://ja.overleaf.com/project</a></div></span><span class="bcard-main withogimg"><div class="bcard-title"><a href="https://ja.overleaf.com/project" rel="nofollow" target="_blank">Log in to Overleaf - Overleaf, オンラインLaTeXエディター</a></div><div class="bcard-description">簡単に使用できるオンラインLaTeXエディター。インストール不要、リアルタイムコラボレーション、バージョン管理、何百種類のLaTeXテンプレートなど多数の機能。</div><a href="https://ja.overleaf.com/project" rel="nofollow" target="_blank"><div class="bcard-img" style="background-image: url(https://cdn.overleaf.com/img/ol-brand/overleaf_og_logo.png)"></div></a></span></div>
 https://ja.overleaf.com/project
 
 http://www1.kiy.jp/~yoka/LaTeX/latex.html
