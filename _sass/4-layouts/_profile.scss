@@ -1,0 +1,266 @@
+// .post-body {
+//   img.reveal-in {
+//     border-radius: $global-radius2 !important;
+//     margin-top: 40px !important;
+//     margin-bottom: 40px !important;
+//   }
+// }
+
+// Post
+.profile {
+  margin-bottom: 20px;
+  border-radius: $global-radius2;
+}
+
+.profile-card,
+.profile-content {
+  //background: $post-black;
+}
+
+.profile-content {
+  //padding: 40px 15px;
+  //box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
+  //border-radius: $global-radius2;
+}
+
+.profile-sec{
+  color: #26272b;
+  margin-bottom: 5px;
+}
+.profile-subsec{
+  color: #424242;
+  margin-top: -5px;
+  margin-bottom: 0px;
+}
+
+.profile-sec-line{
+  color: #26272b;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.profile-card {
+  padding: 50px;
+  background: $post-black;
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25);
+  border-radius: $global-radius2;
+  
+}
+
+.profile-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.card-avatar {
+  display: inline-block;
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-info {
+  width: 360px;
+  margin-left: 40px;
+}
+
+.card-info {
+  .card-name　{
+    font-size: 28px;
+    text-transform: uppercase;
+    color: $text;
+    margin-bottom: 10px;
+  }
+  .card-line {
+    margin: 0px;
+  }
+  .card-explain {
+
+  }
+}
+
+
+
+
+
+
+
+.post-body {
+  padding-bottom: 20px;
+  color: dimgray;
+}
+
+.post-share {
+  padding: 10px 0;
+  .share-item {
+    display: inline-block;
+    padding-right: 15px;
+    a {
+      color: $border-color;
+      &:hover {
+        color: $primary-color;
+      }
+      i.ion {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// POST NAVIGATION
+.post-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.prev,
+.next {
+  flex-basis: 100%;
+  padding: 15px;
+  background: #26272b;
+  &:hover {
+    background: darken(#26272b, 3%);
+    .post-nav-title {
+      color: $primary-color;
+      transition: $global-transition;
+    }
+  }
+  .post-nav-arrow {
+    font-size: 14px;
+    color: $text;
+  }
+  .post-nav-title {
+    font-size: 18px;
+    color: $text;
+    transition: $global-transition;
+  }
+}
+
+.prev {
+  margin-bottom: 10px;
+}
+
+.prev,
+.next {
+  border-radius: $global-radius;
+  text-align: center;
+}
+
+// COMMENTS SECTION
+.comments {
+  padding: 0 15px;
+  background: $blue-darken;
+}
+
+// MEDIA
+@media only screen and (min-width: 576px) {
+  .profile-content {
+    //padding: 40px;
+  }
+  .post-head {
+    .post-title {
+      font-size: 43px;
+      line-height: 43px;
+      margin-bottom: 10px;
+    }
+  }
+  .post-navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .prev,
+  .next {
+    flex-basis: 48%;
+    padding: 20px;
+    .post-nav-title {
+      font-size: 21px;
+    }
+  }
+  .prev {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .next {
+    text-align: right;
+  }
+  .comments {
+    padding: 0 40px;
+  }
+}
+
+//card
+.bcard-wrapper{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0px;
+    border-radius: 3px;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+}
+.bcard-site,.bcard-url{
+    font-size: 12px;
+    line-height: 1.3;
+    overflow: hidden;
+    max-height: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.bcard-header {
+    position: relative;
+    height: 30px;
+    margin-bottom: 5px;
+    display: block;
+}
+.withgfav{padding-left: 23px;}
+.bcard-favicon {position: absolute;
+    top: 0px; left:0px; width:16px; height:16px;}
+.bcard-main{
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+.withogimg{
+    padding-right: 110px;
+    height: 100px;
+}
+ .bcard-img {
+width: 100px;
+height: 100px; 
+position: absolute;
+    top: 0;
+    right: 0;
+    background-size:cover;
+    background-position:center center;
+}
+ .bcard-title{
+    font-size: 17px;
+    margin: 0 0 2px;
+    line-height: 1.4;
+    max-height: 47px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-weight: bold;
+}
+ .bcard-description {
+    line-height: 1.5;
+    font-size: 12px;
+    max-height: 72px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.bcard-title a{color:#424242;}
+.bcard-url a{color:#9e9e9e;}
+.bcard-title a:hover,.bcard-url a:hover,.bcard-site a:hover{text-decoration:underline;}
