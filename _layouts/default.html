@@ -6,12 +6,14 @@
 <body>
 
   {% if site.google-analytics %}
-    {% include google-analytics.html %}
+  {% include google-analytics.html %}
   {% endif %}
-  
+
   {% include header.html %}
 
-      {{ content }}
+  {$ include toc.html html=content %}
+
+  {{ content }}
 
   {% include footer.html %}
   {% include javascripts.html %}

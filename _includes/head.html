@@ -4,11 +4,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}'>
+  <meta name='description'
+    content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}'>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ " /feed.xml" |
+    relative_url }}">
 
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9582592339710489"
+    crossorigin="anonymous"></script>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
@@ -19,21 +24,21 @@
   <meta name="twitter:site" content="@konoe_akitoshi" />
 
   {% if page.title %}
-    <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:title" content="{{ page.title }}" />
   {% else %}
-    <meta name="twitter:title" content="{{ site.title }}" />
+  <meta name="twitter:title" content="{{ site.title }}" />
   {% endif %}
 
   {% if page.description %}
-    <meta name="twitter:description" content="{{ page.description }}" />
+  <meta name="twitter:description" content="{{ page.description }}" />
   {% else %}
-    <meta name="twitter:description" content="{{ site.description }}" />
+  <meta name="twitter:description" content="{{ site.description }}" />
   {% endif %}
   <!-- コメント -->
   {% if page.image %}
-    <meta name="twitter:image" content="{{ site.url }}/img/{{ page.image }}" />
+  <meta name="twitter:image" content="{{ site.url }}/img/{{ page.image }}" />
   {% else %}
-    <meta name="twitter:image" content="{{ site.url }}/img/logo.png?" />
+  <meta name="twitter:image" content="{{ site.url }}/img/logo.png?" />
   {% endif %}
 
   <meta name="twitter:url" content="{{ site.url }}">
@@ -41,9 +46,22 @@
 
 
   <style>
-  {% capture include_to_scssify %}
-    {% include main.scss %}
-  {% endcapture %}
-  {{ include_to_scssify | scssify }}
+    {
+      % capture include_to_scssify %
+    }
+
+      {
+      % include main.scss %
+    }
+
+      {
+      % endcapture %
+    }
+
+      {
+        {
+        include_to_scssify | scssify
+      }
+    }
   </style>
 </head>
