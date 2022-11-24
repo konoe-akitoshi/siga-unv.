@@ -1,55 +1,189 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="icon" href="https://kkgravity.com/wp-content/uploads/2020/09/IOS_14_Logo.png">
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
 
-<div class="container">
-	<div class="row">
-		<div class="col col-12 col-t-8">
-			<div class="row">
-				<article class="article col col-12 col-t-6">
-					<div class="article-box">
-						<div class="article-head">
-							<a href="{{ post.url | prepend: site.baseurl }}" class="article-image"
-								style="background-image: url({{" /img/" | prepend: site.baseurl | append :
-								post.image}})">
-								<div class="image-overlay">
-									<!-- <span class="image-overlay-text">{{post.title | slice: 0}}</span> -->
-								</div>
-							</a>
-						</div>
-						<div class="article-content">
-							<div class="article-info">
-								<div class="article-date">
-									<span class="date"><time datetime="{{ post.date | date_to_xmlschema }}">{% assign
-											date_format =
-											site.minima.date_format | default: "%b %-d, %Y" %}{{ post.date | date:
-											date_format
-											}}</time></span>
-								</div>
-								<div class="article-tag">
-									{% if post.tags.size >= 1 %}
-									{% for tag in post.tags %}
-									<a href="{{ site.baseurl }}/tags#{{tag}}" class="tag">{{ tag }}</a>
-									{% endfor %}
-									{% else %} {% endif %}
-								</div>
-							</div>
-							<h2 class="article-title">
-								<a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
-							</h2>
-							<p class="article-excerpt">{% if post.description %}{{ post.description | strip_html |
-								truncate: 135 }}{%
-								else %}{{ post.content | strip_html | truncate: 135 }}{% endif %}</p>
-						</div>
-					</div>
-				</article> <!-- /.article -->
-				{% endfor %}
-			</div>
-			{% include pagination.html %}
-		</div>
-		<div class="col col-12 col-t-4">
-			{% include sidebar.html %}
-		</div>
-	</div>
-</div>
+<body>
+
+    <!-- Header Start -->
+    <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+            <a href="https://www.edu.cc.uec.ac.jp/~s2210278/home-conlite-14" class="brand">コンピュータリテラシ＃14</a>
+            <nav class="nav">
+                <ul class="nav__wrapper">
+                    <li class="nav__item"><a href="https://www.edu.cc.uec.ac.jp/~s2210278/home-conlite-14">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <div class="container">
+        <div class="content">
+            <!-- <div class="shi-box"> -->
+            <div class="content-text">
+                <h1 class="content-text-title">ようこそ．5班へ．</h1>
+                <p class="content-text-sub">
+                    コンピュータリテラシの総合演習(#14)の課題のために作成されたページです．
+                </p>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cp_cssslider">
+                <div class="cp_slidewrapper">
+                    <div class="cp_slide_item"><img src="img/top/1.jpg"></div>
+                    <div class="cp_slide_item"><img src="img/top/2.jpg"></div>
+                    <div class="cp_slide_item"><img src="img/top/3.jpg"></div>
+                    <div class="cp_slide_item"><img src="img/top/4.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="link-spot">
+                <!-- 1 -->
+                <div class="content-img link-left"
+                    href="https://cdn.zekkei-japan.jp/images/articles/e98c78cd9aaf6587ec340a16b4a8fecc.jpg"
+                    style="background-image: url(https://www.rairaitei.co.jp/common/slide_images/02.jpg)">
+                    <div class="link-text">
+                        <h1 class="link-text">来来亭</h1>
+                        <p class="link-text">
+                            来来亭は中華料理屋のチェーン店です。チャーハンは味がかなり濃く、やみつきになる味で、ラーメンは脂たっぷりのガッツリ系です。味が濃い食べ物が大好きな方は、チャーハンとラーメンはここが一番！
+                        </p>
+                        <a href="https://www.edu.cc.uec.ac.jp/~h2210530/1.html" class="button">Read More</a>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="content-img link-right"
+                    style="background-image: url(https://pic1.homemate-research.com/pubuser1/pubuser_facility_img/2/3/8/1060009832/0000001787/1060009832_0000001787_1.jpg)">
+                    <div class="link-text">
+                        <h1 class="link-text">すき家</h1>
+                        <p class="link-text">
+                            知らない人はいない有名牛丼チェーン店すき家！！疲れた日にがっつきたい食べ物として牛丼は1位です。僕はいつも大盛牛丼と味噌汁と卵のセットを頼みます。安く、美味しく、ガッツリ食べたい気分のときには、かなりオススメです！
+                        </p>
+                        <a href="https://www.edu.cc.uec.ac.jp/~h2210530/2.html" class="button">Read More</a>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="content-img link-left" href="https://www.yamareco.com/uploads/thumbs/4368.jpg"
+                    style="background-image: url(https://www.yamareco.com/uploads/thumbs/4368.jpg)">
+                    <div class="link-text">
+                        <h1 class="link-text">白馬山</h1>
+                        <p class="link-text">
+                            北アルプスの北部、後立山連峰にある日本百名山の一座で、日本最大の雪渓「白馬大雪渓」があることで知られています。大雪渓のある東側は急峻で、反対の西側や越中側は緩やかと、非対称山稜の姿が特徴です。また白馬岳、杓子岳、白馬鑓ヶ岳を併せて「白馬三山」と呼ばれており、縦走登山でも人気です。
+                        </p>
+                        <a href="http://www.edu.cc.uec.ac.jp/~s2210278/1.html" class="button">Read More</a>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="content-img link-right"
+                    style="background-image: url(https://livedoor.blogimg.jp/nuk0926mas-eatdrinkwalk/imgs/e/1/e1e96393.jpg)">
+                    <div class="link-text">
+                        <h1 class="link-text">行きつけのラーメン店1</h1>
+                        <p class="link-text">
+                            僕が最近よく行っているラーメン屋を二軒紹介したいと思います。1つ目は地元にある横浜家系ラーメンの魂心家というお店です。これはぼくがよく食べるラーメンです。塩味をよく頼みます。
+                        </p>
+                        <a href="https://www.edu.cc.uec.ac.jp/~k2210242/mypage14.html" class="button">Read More</a>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="content-img link-left" href="https://www.yamareco.com/uploads/thumbs/4368.jpg"
+                    style="background-image: url(https://www.kagoshima-kankou.com/houjin/photo/image/47)">
+                    <div class="link-text">
+                        <h1 class="link-text">鹿児島の郷土料理２選！</h1>
+                        <p class="link-text">
+                            　鹿児島県は日本の九州地方に位置する、605の島々と薩摩・大隅地方からなる 自然豊かな県です。農業や畜産が盛んで食べ物が美味し
+                        </p>
+                        <a href="http://www.edu.cc.uec.ac.jp/~n2210470/mypage14.html" class="button">Read More</a>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="content-img link-right"
+                    style="background-image: url(https://pbs.twimg.com/profile_banners/978109161735991296/1553482192/600x200)">
+                    <div class="link-text">
+                        <h1 class="link-text">Thinkpad</h1>
+                        <p class="link-text">
+                            Thinkpadについて紹介します．
+                        </p>
+                        <a href="http://www.edu.cc.uec.ac.jp/~s2210278/2.html" class="button">Read More</a>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="content-img link-left" href="https://www.yamareco.com/uploads/thumbs/4368.jpg"
+                    style="background-image: url(https://fukuyama-2shin.com/wp-content/uploads/2020/11/IMG_4024.jpg)">
+                    <div class="link-text">
+                        <h1 class="link-text">行きつけのラーメン店2</h1>
+                        <p class="link-text">
+                            僕が最近よく行っているラーメン屋を二軒紹介したいと思います。 2つ目はNoodle Worksという神奈川にある有名なラーメン屋です。豚骨主流の大分ラーメンで飽きのこない味が特徴です。
+                        </p>
+                        <a href="https://www.edu.cc.uec.ac.jp/~k2210242/mypage15.html" class="button">Read More</a>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="content-img link-right"
+                    style="background-image: url(https://pbs.twimg.com/profile_banners/978109161735991296/1553482192/600x200)">
+                    <div class="link-text">
+                        <h1 class="link-text">Thinkpad</h1>
+                        <p class="link-text">
+                            僕が最近よく行っているラーメン屋を二軒紹介したいと思います。1つ目は地元にある横浜家系ラーメンの魂心家というお店です。これはぼくがよく食べるラーメンです。塩味をよく頼みます。
+                        </p>
+                        <a href="http://www.edu.cc.uec.ac.jp/~s2210278/2.html" class="button">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sidebar">
+                <h2 class="sidebar-title">Member</h2>
+                <hr class="p" noshade="">
+                <div class="member">
+                    <img class="avatar" height="55" width="55"
+                        src="https://pbs.twimg.com/profile_images/1503934304618831878/ajre7jGO_400x400.jpg">
+                    <div class="member-info">
+                        <p class="tag">2210242</p>
+                        <p class="name">河野通樹</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img class="avatar" height="55" width="55"
+                        src="https://4.bp.blogspot.com/-gX99oMun4bM/U9y_wYoE0EI/AAAAAAAAjiU/DHdcIfImCwQ/s800/pose_ganbarou_man.png">
+                    <div class="member-info">
+                        <p class="tag">2210530</p>
+                        <p class="name">秀浦春斗</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img class="avatar" height="55" width="55"
+                        src="https://2.bp.blogspot.com/-_Lp6qiBBA-c/V2FUhsBotwI/AAAAAAAA7YI/_aF1le7PgZssoeAN_QmK4_7S-5wGY13IACLcB/s800/business_kaitataku.png">
+                    <div class="member-info">
+                        <p class="tag">2210470</p>
+                        <p class="name">永田紘士</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img class="avatar" height="55" width="55"
+                        src="https://pbs.twimg.com/profile_images/1538039922463866880/A0m3mnxN_400x400.jpg">
+                    <div class="member-info">
+                        <p class="tag">2210278</p>
+                        <p class="name">佐伯明俊</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <footer class="site-footer">
+        <p class="site-footer">© 2022 Akitoshi Saeki.</p>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>
