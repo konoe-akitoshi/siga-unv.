@@ -6,6 +6,11 @@
     <title>Home</title>
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/23/BTS_G4_opaque.svg">
     <link rel="stylesheet" href="./css/main.css" />
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -47,6 +52,51 @@
             </div>
         </div>
     </div>
+    <h2>Slideshow</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed iaculis metus. Sed euismod purus a risus
+        varius, a scelerisque purus viverra. Aliquam erat volutpat. In vitae ipsum vel velit scelerisque tincidunt.
+        Nulla facilisi. Nulla facilisi. Maecenas et elit condimentum, aliquet ligula eu, pharetra nulla. Duis dignissim
+        enim sit amet ipsum consectetur tincidunt. In hac habitasse platea dictumst. Suspendisse ac nunc malesuada,
+        consectetur turpis a, mollis turpis. Ut elementum, elit a aliquam dictum, dolor orci rutrum lectus, et tincidunt
+        magna dui quis urna. Maecenas tempus, sem in gravida malesuada, quam dolor laoreet tortor, id dictum lectus
+        libero at ligula. Nulla facilisi. Nullam sed sem luctus, malesuada diam ac, imperdiet ipsum. Vivamus eu ipsum
+        sed urna mollis luctus.</p>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="image1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="image2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="image3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="image4.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
     <div class="container">
         <div class="content">
             <div class="link-spot">
